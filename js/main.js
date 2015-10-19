@@ -6,13 +6,21 @@ function setup() {
     //http://www.colors.commutercreative.com/grid/
     var x = 0;
     var y = 0;
+    var gridWidth = width-100;
     for(var i=0; i<100; i++){
     //increment our x
     x += 120;//same as x= x+120
     drawWindow(x,y);
+    //check if x is past the grid width
+    if(x >gridWidth){
+        //set the x back to the beinning
+        x =0;
+        //move y down
+        y += 270;
+    }//end if
+    }//end loop
+}//end setup
 
-    }
-}
 
   function draw(){
   }
