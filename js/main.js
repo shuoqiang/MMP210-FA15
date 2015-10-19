@@ -28,7 +28,13 @@ function setup() {
   strokeWeight(5);
   stroke('LavenderBlush');
   fill('LightPink');
-  rect(startX,startY,100,200);
+      var winWidth = 100;
+      var winHeight = 200;
+  rect(startX,startY,winWidth,winHeight);
+
+      line(startX+winWidth/2,startY,startX+winWidth/2,startY+winHeight);
+      line(startX,startY+winHeight/3,startX+winWidth,startY+winHeight/3);
+      line(startX,startY+winHeight*.66,startX+winWidth,startY+winHeight*.66);
   }
 
 
